@@ -36,3 +36,24 @@ alter table mitarbeiter engine = MyISAM;
 
 
 ```
+ ## Installation 
+ 
+ ```
+ # Schritt repo besorgen 
+ https://downloads.mariadb.org/mariadb/repositories/#mirror=cyanlink
+ 
+ ```
+ 
+ ## mysql - client 
+ 
+ ### Wichtige SQL-Befehle ###
+ 
+ ```
+ show databases; 
+ use mysql; # in die Datenbank wechseln 
+ show tables; 
+ # wie ist die tabelle aufgebaut 
+ describe user; 
+ # mysql - client 
+ select * from user \G # Spaltenweise anzeigen statt Zeilenweise 
+ ```
