@@ -130,3 +130,4 @@ setenforce 0
 # /etc/selinux/config 
 SELIUNX=permissive 
 # greift nach dem nächsten boot 
+```
