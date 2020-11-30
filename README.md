@@ -107,4 +107,26 @@ ib_logfile0 # innodb log file
 ibtmp1 # tablespace für temporäre systemdaten 
 ib_buffer_pool # File zum Zwischenspeichern das buffer_pool beim Runterfahren 
 ```
- 
+
+## Server System Variables 
+
+```
+mysql>show variables; 
+
+# google 
+mariadb server system variables 
+
+```
+
+## selinux abschalten 
+
+```
+# läuft selinux 
+sestatus 
+
+# Während der aktuellen Laufzeit auf permissive setzen (als root) 
+setenforce 0 
+
+# /etc/selinux/config 
+SELIUNX=permissive 
+# greift nach dem nächsten boot 
