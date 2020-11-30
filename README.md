@@ -44,6 +44,16 @@ alter table mitarbeiter engine = MyISAM;
  
  ```
  
+ ### MySQL absichern 
+ 
+ ```
+ mysql_secure_installation 
+ (Alle Fragen mit Y beantworten, ausser evtl. root-pw ändern) 
+ # test-datenbanken werden rausgeschmissen.
+ # anonyme benutzer 
+ # absichern, dass root nur lokal zugreifen kann 
+ ```
+ 
  ## mysql - client 
  
  ### Wichtige SQL-Befehle ###
