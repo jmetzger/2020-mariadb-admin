@@ -96,3 +96,15 @@ alter table mitarbeiter engine = MyISAM;
 
  
  ```
+
+## Innodb - Struktur (welche Files ?) 
+
+```
+/var/lib/mysql 
+ibdata1 - allgemeine Tablespace (für Systemdaten) 
+z.B. training/teilnehmer.ibd (Tablespace pro Tabelle für innodb-engine) 
+ib_logfile0 # innodb log file 
+ibtmp1 # tablespace für temporäre systemdaten 
+ib_buffer_pool # File zum Zwischenspeichern das buffer_pool beim Runterfahren 
+```
+ 
