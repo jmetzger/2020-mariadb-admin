@@ -66,4 +66,33 @@ alter table mitarbeiter engine = MyISAM;
  describe user; 
  # mysql - client 
  select * from user \G # Spaltenweise anzeigen statt Zeilenweise 
+ 
+ # Datenbank anlegeen
+ create schema training;
+ create database training; # same same  
+
+ # Tabelle anlegen
+ create table teilnehmer ( id int, vorname varchar(60), name varchar (60), primary key (id))
+
+ # Datensatz einfügen 
+ insert into teilnehmer ( id, vorname, name) values (4, 'Jochen',"Testero@test");
+ 
+ # Tabellen - Struktur ändern (auto_increment) 
+ ALTER TABLE teilnehmer  CHANGE id id int AUTO_INCREMENT;
+ 
+ # neue struktur 
+ describe teilnehmer;
++---------+-------------+------+-----+---------+----------------+
+| Field   | Type        | Null | Key | Default | Extra          |
++---------+-------------+------+-----+---------+----------------+
+| id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| vorname | varchar(60) | YES  |     | NULL    |                |
+| name    | varchar(60) | YES  |     | NULL    |                |
++---------+-------------+------+-----+---------+----------------+
+3 rows in set (0.001 sec)
+ 
+ # Einfügen ohne auto_incremement 
+ MariaDB [training]> insert into teilnehmer (vorname, name) values ('Jochen',"El Mariachi");
+
+ 
  ```
