@@ -1,2 +1,5 @@
-# 2020-mariadb-admin
-MariaDB Komplettkurs Administration 
+# MariaDB Komplettkurs 
+
+## Architektur des MariaDB-Servers 
+
+  * Referenz: http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
