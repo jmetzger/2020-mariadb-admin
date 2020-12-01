@@ -18,3 +18,20 @@ set sql_log_bin = 1
 # binärlog ausgeben 
 mysqlbinlog hostname-bin.00001 
 ```
+
+## Nur bestimmte Datenbanken auslesen 
+
+```
+Geht nur, wenn 
+use datenbank
+insert into tabelle 
+
+# nicht bei  
+insert into datenbank.tabelle # das wird dann nicht rausgefiltert 
+
+#
+mysqlbinlog -vv --database=training mdb7-bin.000002
+
+```
+
+
