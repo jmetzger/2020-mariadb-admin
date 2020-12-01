@@ -1,5 +1,10 @@
 # MariaDB Komplettkurs 
 
+
+   1. []()
+   1. []()
+  
+
 ## Architektur des MariaDB-Servers 
 
   * Referenz: http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
