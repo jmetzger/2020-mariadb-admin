@@ -7,6 +7,7 @@
    1. [Enrypting mysqldump](encryption-openssl-mysqldump.md)
    1. [Journalctl](journalctl.md)
    1. [Debugging with Logs](logs-debug.md)
+   1. [PMM Percona Monitoring Management](percona-monitoring-management.md)
   
 
 ## Architektur des MariaDB-Servers 
