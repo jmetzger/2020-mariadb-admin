@@ -38,7 +38,7 @@
   0. systemctl stop mariadb
      cd /var/lib/
      mv mysql mysql.bkup
-     mysql_install_db --user=mysql --datadir=mysql
+     mysql_install_db --user=mysql --datadir=/var/lib/mysql
      systemctl start mariadb
   1. Nächtliches Backup einspielen 
      mysql < /usr/src/nightly.sql 
