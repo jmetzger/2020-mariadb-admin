@@ -3,8 +3,10 @@
 
    1. [Point-In-Time Recovery](pit-recovery.md)
    1. [Flashback](flashback.md)
-   1. []()
-   1. []()
+   1. [Binary Log](binarylog.md)
+   1. [Enrypting mysqldump](encryption-openssl-mysqldump.md)
+   1. [Journalctl](journalctl.md)
+   1. [Debugging with Logs](logs-debug.md)
   
 
 ## Architektur des MariaDB-Servers 
