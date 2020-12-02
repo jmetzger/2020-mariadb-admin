@@ -34,6 +34,7 @@
   2. mysqlbinlog --stop-position=<postion_aus_vorbereitung> server-bin.00002 server-bin.00003 server-bin-00004 > /usr/src/recover.sql
   
 ### Einspielen der Daten 
+``` 
   0. systemctl stop mariadb
      cd /var/lib/
      mv mysql mysql.bkup
@@ -44,3 +45,4 @@
   2. zur Übung: sichtprüfung in mysql: show databases 
   3. mysql < /usr/src/recover.sql 
   4. zur Übung: sichtprüfung in mysql: show databases # sind alle Datenbanken wieder da. 
+```
