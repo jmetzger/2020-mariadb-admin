@@ -8,6 +8,7 @@
 user=root 
 ```
 
+```
 mkdir /backups 
 mariabackup --backup --target=/backups/201202-1411
 ```
