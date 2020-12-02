@@ -2,6 +2,12 @@
 
   * mariabackup is a fork of xtrabackup, that supports windows os and encryption (xtrabackup does not !!!) 
 
+## Installation 
+
+```
+#yum provides mariabackup 
+yum install MariaDB-backup 
+```
 
 ## Schritt 1: Backup 
 
