@@ -8,6 +8,7 @@
    1. [Journalctl](journalctl.md)
    1. [Debugging with Logs](logs-debug.md)
    1. [PMM Percona Monitoring Management](percona-monitoring-management.md)
+   1. [Collation - case sensitive](collation-case-sensitive.md) 
   
 
 ## Architektur des MariaDB-Servers 
