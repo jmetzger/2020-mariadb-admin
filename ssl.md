@@ -75,6 +75,17 @@ journalctl -u mariadb
 
 ```
 
+### Setup on clients 
+
+```
+# from 
+# copy /etc/mysql/ssl to client
+cd /etc/mysql
+tar cvfz ssl.tar.gz ssl
+scp ssl.tar.gz 11trainingdo@ip:/tmp 
+```
+
+
 
 
 
