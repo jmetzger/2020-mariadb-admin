@@ -9,6 +9,8 @@
    1. [Debugging with Logs](logs-debug.md)
    1. [PMM Percona Monitoring Management](percona-monitoring-management.md)
    1. [Collation - case sensitive](collation-case-sensitive.md) 
+   1. [Galera](galera.md)
+   1. [Galera Questions](galera-questions.md) 
   
 
 ## Architektur des MariaDB-Servers 
