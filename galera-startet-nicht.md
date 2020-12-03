@@ -59,3 +59,9 @@ MariaDB [(none)]> show status like 'wsrep_%state_uuid';
 2 rows in set (0.003 sec)
 
 ```
+
+## Ist status o.k. ? Haben alle nodes die Daten
+
+```
+show status like 'wsrep_local_state_comment' #      | Synced
+show status like 'wsrep_cluster_size' # sind alle Mitglieder im Cluster 
