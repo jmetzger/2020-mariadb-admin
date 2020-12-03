@@ -68,6 +68,14 @@ chown -vR mysql:mysql /etc/mysql/ssl/
 
 ```
 
+### Restart and check for errors 
+```
+systemctl restart mariadb
+journalctl -u mariadb 
+
+```
+
+
 
 
 
