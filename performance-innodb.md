@@ -57,6 +57,9 @@ innodb_flush_method = O_DIRECT
 /etc/my.cnf.d/server.cnf 
 [mysqld]
 skip-name-resolve 
+
+systemctl restart mariadb 
+
 ```
 
 
