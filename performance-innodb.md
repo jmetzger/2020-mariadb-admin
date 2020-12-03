@@ -15,6 +15,15 @@ Free buffers       59
 MariaDB [(none)]> pager 
 Default pager wasn't set, using stdout.
 MariaDB [(none)]> 
+
+# in der Konfiguration 
+/etc/my.cnf.d/server.cnf
+[mysqld]
+innodb_buffer_pool_size = 128 G
+
+# während der Laufzeit // Achtung ... nicht persistent 
+set global innob_buffer_pool_size = 138000000000 # zahlt stimmt nicht ganz 
+
 ```
 
 ## innodb_flush_log_at_trx_commit 
@@ -31,3 +40,26 @@ innodb_flush_log_at_trx_commit = 2
 innodb_flush_method = O_DIRECT
 # DO not use O_DIRECT_no_fsync on centos, because XFS 
 ```
+
+## innob_log_file_size 
+
+  * https://www.percona.com/blog/2008/11/21/how-to-calculate-a-good-innodb-log-file-size/
+ 
+## innodb_flush_neighbors 
+
+  * bei ssd auf 0 setzen (default 1) 
+  * d.h. benachbarte buffer-pages werden nicht mit auf Platte geflusht 
+
+## skip-name-resolve 
+
+```
+# Bitte nur aktivieren, wenn ihr ausschliesslich ip - adressen bei den Usern habt 
+/etc/my.cnf.d/server.cnf 
+[mysqld]
+skip-name-resolve 
+```
+
+
+## Ref
+
+  * http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
