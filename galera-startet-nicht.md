@@ -31,3 +31,31 @@ systemctl start mariadb
 echo "show status like 'wsrep_cluster%'" | mysql 
 
 ```
+
+## War Reperatur erfolgreich ? 
+
+```
+
+wsrep_last_committed entspricht seq_no in /var/lib/mysql/grastate.data
+.. und wird dort eingetragen, wenn der Server gestoppt 
+
+seq_no ist immer -1, wenn der Server läuft. 
+
+MariaDB [(none)]> show status like 'wsrep_last_committed';
++----------------------+-------+
+| Variable_name        | Value |
++----------------------+-------+
+| wsrep_last_committed | 19    |
++----------------------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [(none)]> show status like 'wsrep_%state_uuid';
++--------------------------+--------------------------------------+
+| Variable_name            | Value                                |
++--------------------------+--------------------------------------+
+| wsrep_local_state_uuid   | 02e7239d-3557-11eb-85a9-c75571931751 |
+| wsrep_cluster_state_uuid | 02e7239d-3557-11eb-85a9-c75571931751 |
++--------------------------+--------------------------------------+
+2 rows in set (0.003 sec)
+
+```
