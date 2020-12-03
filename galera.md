@@ -33,3 +33,8 @@ wsrep_sst_method=rsync
 systemctl stop mariadb 
 galera_new_cluster 
 ```
+
+## Dokumentation 
+
+  * https://galeracluster.com/library/documentation/galera-status-variables.html
+  
