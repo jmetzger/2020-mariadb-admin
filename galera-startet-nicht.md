@@ -65,3 +65,4 @@ MariaDB [(none)]> show status like 'wsrep_%state_uuid';
 ```
 show status like 'wsrep_local_state_comment' #      | Synced
 show status like 'wsrep_cluster_size' # sind alle Mitglieder im Cluster 
+```
