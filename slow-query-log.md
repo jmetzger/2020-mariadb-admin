@@ -37,4 +37,6 @@ yum install wget
 cd /usr/src
 wget https://downloads.percona.com/downloads/percona-release/percona-release-1.0-25/redhat/percona-release-1.0-25.noarch.rpm
 rpm -ivh percona-release-1.0-25.noarch.rpm
+
+yum install percona-toolkit 
 ```
