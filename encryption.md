@@ -26,6 +26,22 @@ cat mysql/encryption/keyfile
 1;282FA20F44454E2D09165E8ED1D9E82CD543CF8E7CBF236E06C94C76C531758A
 ```
 
+## Add settings to mariadb and restart 
+
+```
+/etc/my.cnf.d/server.cnf 
+[mysqld]
+#...
+plugin-load-add=file_key_management
+file_key_management_filename=/etc/mysql/encryption/keyfile
+file_key_management_encryption_algorithm=AES_CTR
+
+# 
+systemctl restart mariadb 
+
+```
+
+
 ## Order is important 
 
 ```
