@@ -12,6 +12,7 @@
    1. [Encryption-data-at-rest](encryption.md) 
    1. [Galera](galera.md)
    1. [Galera Questions](galera-questions.md) 
+   1. [Monitoring (What to monitor?)](monitoring.md)
   
 
 ## Architektur des MariaDB-Servers 
