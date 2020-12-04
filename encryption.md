@@ -15,6 +15,17 @@ key=282FA20F44454E2D09165E8ED1D9E82CD543CF8E7CBF236E06C94C76C531758A
 iv =1F880B12999A48EAFCD3FD0ACBE5475D
 ```
 
+```
+# write key with prefix 1; to file keyfile  
+tree  mysql/
+mysql/
+├── encryption
+│   └── keyfile
+
+cat mysql/encryption/keyfile 
+1;282FA20F44454E2D09165E8ED1D9E82CD543CF8E7CBF236E06C94C76C531758A
+```
+
 ## Order is important 
 
 ```
