@@ -3,8 +3,29 @@
 ## HA-Proxy / 
 
   * Nachteile: Das Teil ist dumm. (Versteht kein SQL) 
+  * geeignigt für einaches Schreiben auf den einen / Lesen auf den anderen
+  * oder: RoundRobin 
   
 ## MySQL-Router / MySQL-Proxy 
+
+### Galera Load-Balancer 
+
+  * https://galeracluster.com/library/documentation/glb.html
+
+### ProxySQL 
+
+  * https://severalnines.com/database-blog/how-run-and-configure-proxysql-20-mysql-galera-cluster-docker
+
+
+#### ProxySQL - Vorteile
+
+  * OpenSource 
+  * HochLast ausgelegt 
+
+#### ProxySQL - Nachteile 
+
+  * Etwas fricklig einzurichten (alles über db) 
+  * User, die verwendet werden für den Zugang müssen eingerichtet   
 
 ### MaxScale 
 
@@ -24,6 +45,16 @@
 # ReadWrite-Split Router 
 # oder: Verteilt auf all 
 
-Nachteile: Transaktionen über mehrere Statements gehen immer auf den Master 
-
 ```
+#### MaxScale - Nachteile 
+
+  * Nachteile: Transaktionen über mehrere Statements gehen immer auf den Master 
+
+#### MaxScale - Achtung 
+
+  * Bitte in MySQL/MariaDB keine Nutzer mit Wildcard eintragen, wenn ihr MaxScale verwendet 
+  * user@'%' <- das nicht !!! 
+
+
+
+
