@@ -13,6 +13,21 @@ mysql>set global slow_query_log = on
 
 ```
 
+## Where is ist ? 
+
+```
+show global variables like '%slow_query_log_file%';
++---------------------+---------------+
+| Variable_name       | Value         |
++---------------------+---------------+
+| slow_query_log_file | mdb7-slow.log |
++---------------------+---------------+
+1 row in set (0.001 sec)
+
+
+```
+
+
 ## installieren von percona-toolkit 
 
 ```
