@@ -15,6 +15,8 @@
  
 ### Platte aka IO-Subsystem (iostats)
 
+  * http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
+
 | --       | --          | -- |
 | ------------- |:-------------:| -----:|
 | Read/Write requests	      | IOPS (Input/Output operations per second) | -- |
