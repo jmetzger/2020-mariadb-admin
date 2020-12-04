@@ -74,8 +74,16 @@ SELECT * FROM information_schema.innodb_tablespaces_encryption;
 ## Next step: Encrypt more 
 
 ```
+# /etc/my.cnf.d/server.cnf 
+# what to encrypt
+innodb_encrypt_log
+innodb_encrypt_tables=ON
+innodb_encryption_threads=4
+# for monitoring // additional information in information_schema.innodb-tablespaces-encryption  
+innodb-tablespaces-encryption
 
-
+# restart
+systemctl restart mariadb 
 
 ```
 
