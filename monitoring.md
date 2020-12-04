@@ -38,6 +38,13 @@
 | Innodb_row_lock_waits	| Number of times InnoDB had to wait before locking a row.	| None |
 | Innodb_buffer_pool_wait_free	| Number of times InnoDB had to wait for memory pages to be flushed. If too high, innodb_buffer_pool_size is too small for current write load.	| None | 
 
+### Query tracking 
+
+| Metric	| Comments	| Suggested Alert | 
+Slow_queries	Number of queries that took more than long_query_time seconds to execute. Slow queries generate excessive disk reads, memory and CPU usage. Check slow_query_log to find them.	None
+Select_full_join	Number of full joins needed to answer queries. If too high, improve your indexing or database schema.	None
+Created_tmp_disk_tables	Number of temporary tables (typically for joins) stored on slow spinning disks, instead of faster RAM.	None
+(Full table scans) Handler_read%	Number of times the system reads the first row of a table index. Sequential reads might indicate a faulty index.	None
 
 
 ## Ref 
