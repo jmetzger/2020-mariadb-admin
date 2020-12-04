@@ -53,6 +53,31 @@ journalctl -u mariadb | grep -i error | grep 'file_key'
 
 ```
 
+## test encryption 
+```
+create database training;
+use training;
+CREATE TABLE table1
+(col1 INT NOT NULL PRIMARY KEY, secret CHAR(200))
+ENGINE=InnoDB ENCRYPTED=YES;
+
+SELECT * FROM information_schema.innodb_tablespaces_encryption;
++-------+-----------------+-------------------+--------------------+-----------------+---------------------+--------------------------+------------------------------+----------------+----------------------+
+| SPACE | NAME            | ENCRYPTION_SCHEME | KEYSERVER_REQUESTS | MIN_KEY_VERSION | CURRENT_KEY_VERSION | KEY_ROTATION_PAGE_NUMBER | KEY_ROTATION_MAX_PAGE_NUMBER | CURRENT_KEY_ID | ROTATING_OR_FLUSHING |
++-------+-----------------+-------------------+--------------------+-----------------+---------------------+--------------------------+------------------------------+----------------+----------------------+
+|    78 | training/table1 |                 1 |                  0 |               1 |                   1 |                     NULL |                         NULL |              1 |                    0 |
++-------+-----------------+-------------------+--------------------+-----------------+---------------------+--------------------------+------------------------------+----------------+----------------------+
+1 row in set (0.001 sec)
+
+```
+
+## Next step: Encrypt more 
+
+```
+
+
+
+```
 
 
 
