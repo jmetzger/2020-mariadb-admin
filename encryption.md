@@ -106,3 +106,13 @@ plugin-load-add=file_key_management
 file_key_management_filename=/mnt/usb/secret.txt
 file_key_management_encryption_algorithm=AES_CTR
 ```
+
+### mariabackup --backup 
+
+```
+# 
+mariabackup --backup --target-dir=/backups/20201204
+mariabackup --prepare --target-dir=/backups/20201204
+mariabackup --copy-backup --target-dir=/backups/20201204 
+
+```
