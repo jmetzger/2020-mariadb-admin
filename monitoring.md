@@ -17,7 +17,7 @@
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| cRead/Write requests	IOPS (Input/Output operations per second)      | -- | -- |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
