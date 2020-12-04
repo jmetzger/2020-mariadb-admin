@@ -26,6 +26,10 @@
 
 ### Gneral mysql metrics 
 
+ ```
+ mysql -E -e "select variable_value from information_schema.session_status where variable_name = 'uptime'";
+ ```
+
 | Metric	| Comments	| Suggested Alert |
 | ------------- |:-------------:| -----:|
 | Uptime	| Seconds since the server was started. We can use this to detect respawns.	 | When uptime is < 180. |
