@@ -85,16 +85,20 @@ tar cvfz ssl.tar.gz ssl
 scp ssl.tar.gz 11trainingdo@ip:/tmp 
 ```
 
+```
+sudo vi /etc/mysql/mariadb.conf.d/50-mysql-clients.cnf
 
+Append/edit in [mysql] section:
 
-
-
-
-
-
-
-
-
+## MySQL Client Configuration ##
+ssl-ca=/etc/mysql/ssl/ca-cert.pem
+ssl-cert=/etc/mysql/ssl/client-cert.pem
+ssl-key=/etc/mysql/ssl/client-key.pem
+##  Force TLS version for client too
+#tls_version = TLSv1.2,TLSv1.3
+### This option is disabled by default ###
+### ssl-verify-server-cert ###
+```
 
 
 ## Ref 
