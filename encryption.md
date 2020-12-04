@@ -41,6 +41,20 @@ systemctl restart mariadb
 
 ```
 
+## Was it loaded succesfully ?
+
+```
+# must appear here
+show plugins 
+# if not loaded will be not_installed status in here 
+select information_schema.all_plugins where plugin_name like '%key%';
+# you can also check the logs
+journalctl -u mariadb | grep -i error | grep 'file_key'
+
+```
+
+
+
 
 ## Order is important 
 
