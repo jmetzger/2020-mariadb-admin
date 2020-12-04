@@ -13,6 +13,7 @@
    1. [Galera](galera.md)
    1. [Galera Questions](galera-questions.md) 
    1. [Monitoring (What to monitor?)](monitoring.md)
+   1. [Slow Query Log](slow-query-log.md) 
   
 
 ## Architektur des MariaDB-Servers 
