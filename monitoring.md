@@ -34,6 +34,7 @@
 ### InnoDB 
 
 | Metric | Coments | Suggested Alert | 
+| ------------- |:-------------:| -----:|
 | Innodb_row_lock_waits	| Number of times InnoDB had to wait before locking a row.	| None |
 | Innodb_buffer_pool_wait_free	| Number of times InnoDB had to wait for memory pages to be flushed. If too high, innodb_buffer_pool_size is too small for current write load.	| None | 
 
