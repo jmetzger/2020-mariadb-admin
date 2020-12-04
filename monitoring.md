@@ -28,7 +28,25 @@
 
  ```
  mysql -E -e "select variable_value from information_schema.session_status where variable_name = 'uptime'";
- ```
+ 
+ # max connections 
+ MariaDB [(none)]> show status like 'max_used_connections';
++----------------------+-------+
+| Variable_name        | Value |
++----------------------+-------+
+| Max_used_connections | 1     |
++----------------------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [(none)]> show variables like 'max_connections';
++-----------------+-------+
+| Variable_name   | Value |
++-----------------+-------+
+| max_connections | 151   |
++-----------------+-------+
+1 row in set (0.001 sec)
+ 
+```
 
 | Metric	| Comments	| Suggested Alert |
 | ------------- |:-------------:| -----:|
