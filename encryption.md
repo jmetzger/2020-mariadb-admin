@@ -4,6 +4,17 @@
   * https://mariadb.com/resources/blog/table-and-tablespace-encryption-on-mariadb-10-1/
   * https://mariadb.com/kb/en/data-at-rest-encryption-overview/
 
+## Create key 
+
+```
+# Befehl
+openssl enc -aes-256-ctr -k mylong2016secret@keyfor35fun -P -md sha1
+# Ausgabe 
+salt=DADA11ACFC68F5E6
+key=282FA20F44454E2D09165E8ED1D9E82CD543CF8E7CBF236E06C94C76C531758A
+iv =1F880B12999A48EAFCD3FD0ACBE5475D
+```
+
 ## Order is important 
 
 ```
