@@ -112,3 +112,8 @@ MariaDB [sakila]>
 ```
 
 * type ALL means -> full table scan (bad !!) 
+
+
+## Ref / Docs (good read) 
+
+  * https://www.amazon.de/Effective-Optimizing-Statements-Oracle-English-ebook/dp/B006402OBI/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=oracle+mysql+indexes&qid=1607088075&sr=8-3
