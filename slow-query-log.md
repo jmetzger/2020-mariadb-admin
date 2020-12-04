@@ -1,8 +1,19 @@
 # slow query log 
 
   * https://mariadb.com/kb/en/slow-query-log-overview/
+  
+## Slow query log aktivieren 
 
-# installieren von percona-toolkit 
+```
+# in der session 
+mysql>set long_query_time = 0.000001
+mysql>set global long_query_time = 0.000001
+mysql>set slow_query_log = on 
+mysql>set global slow_query_log = on 
+
+```
+
+## installieren von percona-toolkit 
 
 ```
 https://www.percona.com/downloads/percona-release/
