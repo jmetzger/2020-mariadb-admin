@@ -13,7 +13,7 @@
   * Server per ping erreichen (mysqladmin ping -h ziel-ip) 
   * Einlogbar ? (myadmin ping -h ziel-ip -u control_user 
  
-### Platte aka IO-Subsystem 
+### Platte aka IO-Subsystem (iostats)
 
 | --       | --          | -- |
 | ------------- |:-------------:| -----:|
